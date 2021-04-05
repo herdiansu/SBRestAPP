@@ -1,0 +1,27 @@
+<wsdl:definitions targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/SBApp1/SBProject/dbDcvRequest" name="dbDcvRequest-concrete" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+    <wsdl:import location="dbDcvRequest.wsdl" namespace="http://xmlns.oracle.com/pcbpel/adapter/db/SBApp1/SBProject/dbDcvRequest"/>
+    <wsdl:binding name="dbDcvRequest_ptt-binding" type="dbd:dbDcvRequest_ptt" xmlns:dbd="http://xmlns.oracle.com/pcbpel/adapter/db/SBApp1/SBProject/dbDcvRequest">
+        <soap:binding style="document" transport="http://www.bea.com/wli/sb/transports/jca"/>
+        <wsdl:operation name="merge">
+            <soap:operation soapAction="merge"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="insert">
+            <soap:operation soapAction="insert"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="dbDcvRequestSelect">
+            <soap:operation soapAction="dbDcvRequestSelect"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+</wsdl:definitions>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.example.org"
+            targetNamespace="http://www.example.org" elementFormDefault="qualified">
+  <xsd:complexType name="input_param">
+    <xsd:sequence>
+      <xsd:element name="noDcv" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="inputParam" type="input_param"/>
+  <xsd:complexType name="DcvRequest">
+    <xsd:sequence>
+      <xsd:element name="id" type="xsd:string"/>
+      <xsd:element name="noDcv" type="xsd:string"/>
+      <xsd:element name="custCode" type="xsd:string"/>
+      <xsd:element name="custName" type="xsd:string"/>
+      <xsd:element name="noPC" type="xsd:string"/>
+      <xsd:element name="status" type="xsd:string"/>
+      <xsd:element name="apprValue" type="xsd:decimal"/>
+      <xsd:element name="location" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="dcvRequestCollection">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="dcvRequest" type="DcvRequest" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

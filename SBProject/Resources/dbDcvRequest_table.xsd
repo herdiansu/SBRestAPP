@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/dbDcvRequest" xmlns="http://xmlns.oracle.com/pcbpel/adapter/db/top/dbDcvRequest" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="DcvRequestCollection" type="DcvRequestCollection"/>
+   <xs:complexType name="DcvRequestCollection">
+      <xs:sequence>
+         <xs:element name="DcvRequest" type="DcvRequest" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="DcvRequest">
+      <xs:sequence>
+         <xs:element name="dcvhId" type="xs:decimal"/>
+         <xs:element name="dcvhCustCode" type="string100" minOccurs="0" nillable="true"/>
+         <xs:element name="dcvhCustName" type="string200" minOccurs="0" nillable="true"/>
+         <xs:element name="dcvhCompany" type="string3" minOccurs="0" nillable="true"/>
+         <xs:element name="dcvhNoPc" type="string100" minOccurs="0" nillable="true"/>
+         <xs:element name="dcvhPcKategori" type="string50" minOccurs="0" nillable="true"/>
+         <xs:element name="dcvhPcTipe" type="string50" minOccurs="0" nillable="true"/>
+         <xs:element name="dcvhPeriodePcStart" type="xs:dateTime" minOccurs="0" nillable="true"/>
+         <xs:element name="dcvhPeriodePcEnd" type="xs:dateTime" minOccurs="0" nillable="true"/>
+         <xs:element name="dcvhNoDcv" type="string15" minOccurs="0" nillable="true"/>
+         <xs:element name="dcvhSubmitTime" type="xs:dateTime" minOccurs="0" nillable="true"/>
+         <xs:element name="dcvhValue" type="xs:decimal" minOccurs="0" nillable="true"/>
+         <xs:element name="dcvhAppvValue" type="xs:decimal" minOccurs="0" nillable="true"/>
+         <xs:element name="dcvhStatus" type="string30" minOccurs="0" nillable="true"/>
+         <xs:element name="dcvhLastStep" type="string60" minOccurs="0" nillable="true"/>
+         <xs:element name="dcvhCurrentStep" type="string60" minOccurs="0" nillable="true"/>
+         <xs:element name="modifiedDt" type="xs:dateTime" minOccurs="0" nillable="true"/>
+         <xs:element name="dcvhRegion" type="string30" minOccurs="0" nillable="true"/>
+         <xs:element name="dcvhArea" type="string60" minOccurs="0" nillable="true"/>
+         <xs:element name="dcvhLocation" type="string100" minOccurs="0" nillable="true"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:element name="dbDcvRequestSelect_pDcvNoInputParameters" type="dbDcvRequestSelect_pDcvNo"/>
+   <xs:complexType name="dbDcvRequestSelect_pDcvNo">
+      <xs:sequence>
+         <xs:element name="pDcvNo" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:simpleType name="string100">
+      <xs:restriction base="xs:string">
+         <xs:maxLength value="100"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="string200">
+      <xs:restriction base="xs:string">
+         <xs:maxLength value="200"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="string3">
+      <xs:restriction base="xs:string">
+         <xs:maxLength value="3"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="string50">
+      <xs:restriction base="xs:string">
+         <xs:maxLength value="50"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="string15">
+      <xs:restriction base="xs:string">
+         <xs:maxLength value="15"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="string30">
+      <xs:restriction base="xs:string">
+         <xs:maxLength value="30"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="string60">
+      <xs:restriction base="xs:string">
+         <xs:maxLength value="60"/>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:schema>

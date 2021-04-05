@@ -1,0 +1,6 @@
+<view_states>
+   <function arity="1" name="resultMap2">
+      <source_tree_view last.visible.row="9" last.visible.path="/sourceRoot[[0]]/dcvRequestCollection[[0]]/dcvRequest[[0]]/location[[7]]" first.visible.path="/sourceRoot[[0]]/dcvRequestCollection[[0]]" expanded.paths="/sourceRoot[[0]]/dcvRequestCollection[[0]]&#xA;/sourceRoot[[0]]/dcvRequestCollection[[0]]/dcvRequest[[0]]" first.visible.row="0" selected.paths="/sourceRoot[[0]]/dcvRequestCollection[[0]]/dcvRequest[[0]]/apprValue[[6]]"/>
+      <target_tree_view last.visible.row="21" last.visible.path="/TargetRoot[[0]]/DcvRequestCollection[[0]]/DcvRequest[[0]]/dcvhLocation[[19]]" first.visible.path="/TargetRoot[[0]]/DcvRequestCollection[[0]]" expanded.paths="/TargetRoot[[0]]/DcvRequestCollection[[0]]&#xA;/TargetRoot[[0]]/DcvRequestCollection[[0]]/DcvRequest[[0]]" first.visible.row="0" selected.paths="/TargetRoot[[0]]/DcvRequestCollection[[0]]/DcvRequest[[0]]/dcvhAppvValue[[12]]"/>
+   </function>
+</view_states>
